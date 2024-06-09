@@ -36,22 +36,22 @@
       <!-- end why section -->
       
       <!-- arrival section -->
-      @include('home.new_arrival')
+       @include('home.new_arrival')
       <!-- end arrival section -->
       
       <!-- product section -->
-      @include('home.product')
+       @include('home.product')
       <!-- end product section -->
 
       <!-- subscribe section -->
-      @include('home.subscribe')
+       @include('home.subscribe')
       <!-- end subscribe section -->
       
       <!-- client section -->
-      @include('home.clients')
+       @include('home.clients')
         <!-- end client section -->
         <!-- footer starts -->
-      @include('home.footer')
+       @include('home.footer')
       <!-- footer end -->
     
         <!-- Javascript files-->
