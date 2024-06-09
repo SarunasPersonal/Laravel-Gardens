@@ -9,8 +9,10 @@ use LDAP\Result;
 class AdminController extends Controller
 {
     public function view_category()
+    
     {
-        return view('admin.category');
+        $data=Category::all();
+        return view('admin.category',compact('data'));
     }
     /**
      * Add a new category.
@@ -32,4 +34,12 @@ class AdminController extends Controller
         // Redirect back to the previous page
         return redirect()->back()->with('message','Category Successfully added!');
     }
+    public function delete_category($id)
+    {
+        $data=category::find($id);
+        $data->delete();
+        return redirect()->back()->with('message','Category Successfully deleted!');
+
+    }
+    
 }

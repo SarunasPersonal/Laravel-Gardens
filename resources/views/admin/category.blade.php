@@ -17,6 +17,13 @@
       .input_color{
         color:black;
       }
+      .center{
+        margin: auto;
+        width: 65%;
+        border: 3px solid white;
+        margin-top: 60px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -45,6 +52,22 @@
                 <input class="input_color" type="text" name="category" placeholder="Enter Category name" >
                 <input type="submit" name="submin" class="btn btn-primary" value="Add Category">
               </form>
+              <table class='center'>
+                <tr>  
+                  <td>Category</td>
+                  <td>Action</td>
+                </tr>
+                @foreach($data as $item)
+                <tr>
+                  <td>{{ $item->category_name }}</td>
+                  <td>
+                    <a class="btn btn-danger" href="{{ url('delete_category', $item->id) }}">Delete</a>
+                  </td>
+                </tr>
+                @endforeach
+
+              </table>
+                
             </div>
           </div>
         </div>
