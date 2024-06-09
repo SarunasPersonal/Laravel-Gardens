@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
-use LDAP\Result;
+use App\Models\Product;
 
 class AdminController extends Controller
 {
@@ -39,6 +39,40 @@ class AdminController extends Controller
         $data=category::find($id);
         $data->delete();
         return redirect()->back()->with('message','Category Successfully deleted!');
+
+    }
+
+    public function view_product()
+    {
+        $category=category::all();
+        return view('admin.product',compact('category'));
+
+    }
+    public function add_product (Request $request)
+    {
+        $product=new product;
+        $product->title=$request->title;
+        $product->description=$request->description;
+        $product->price=$request->price;
+        $product->quantity=$request->quantity;
+        $product->discount_price=$request->discount_price;
+        $product->category=$request->category;
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imagename = time().'.'.$image->getClientOriginalExtension();
+            $image->move('product', $imagename);
+            $product->image = $imagename;
+            $product->save();
+        }
+
+
+        return redirect()->back();
+
+        
+       
+
+
+
 
     }
     
