@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- start plugin css for this page -->
+    <!-- Required meta tags -->
     @include('admin.css')
-    
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="admin/assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->
-      @include('admin.side_bar')
+      @include('admin.sidebar')
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_navbar.html -->
-        @include('admin.navbar')
-        
+       @include('admin.navbar')
+        <!-- partial -->
+        @include('admin.main')
           <!-- content-wrapper ends -->
-          @include('admin.main_panel')
           <!-- partial:partials/_footer.html -->
           @include('admin.footer')
           <!-- partial -->
@@ -22,7 +26,4 @@
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    @include('admin.script')
-    <!-- End custom js for this page -->
   </body>
-</html>admin/
