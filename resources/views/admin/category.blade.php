@@ -61,7 +61,7 @@
                 <tr>
                   <td>{{ $item->category_name }}</td>
                   <td>
-                    <a class="btn btn-danger" href="{{ url('delete_category', $item->id) }}">Delete</a>
+                    <a onclick="return confirm('Press Ok to Delete Category.')" class="btn btn-danger" href="{{ url('delete_category', $item->id) }}">Delete</a>
                   </td>
                 </tr>
                 @endforeach
