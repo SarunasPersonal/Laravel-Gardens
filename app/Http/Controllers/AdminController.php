@@ -67,11 +67,11 @@ class AdminController extends Controller
 
 
         return redirect()->back()->with('message','Category Successfully added!');
-
-        
-       
-
-
+    }
+    public function show_product()
+    {
+        $product=product::all();
+        return view('admin.show_product',compact('product'));
 
 
     }
