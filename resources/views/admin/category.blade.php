@@ -5,7 +5,7 @@
     @include('admin.css')
     
       <!-- partial:partials/_sidebar.html -->
-      @include('admin.side_bar')
+      @include('admin.sidebar')
       <!-- partial -->
       
         <!-- partial:partials/_navbar.html -->
