@@ -32,8 +32,9 @@
           <div class="content-wrapper">
             <div class="div_center">
               <h2 class="h2_font">Add Category</h2>
-              <form>
-                <input class="input_color" type="text" name="category" placeholder="Enter Category name" required>
+              <form action="{{url('/add_category')}}" method="POST">
+                @csrf
+                <input class="input_color" type="text" name="category" placeholder="Enter Category name" >
                 <input type="submit" name="submin" class="btn btn-primary" value="Add Category">
               </form>
             </div>
