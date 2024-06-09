@@ -17,7 +17,7 @@
       .input_color{
         color:black;
       }
-      </style>
+    </style>
   </head>
   <body>
     <div class="container-scroller">
@@ -26,13 +26,15 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_navbar.html -->
-       @include('admin.navbar')
+        @include('admin.navbar')
         <!-- partial -->
         <!-- Adding message if category added -->
         <div class="main-panel">
           <div class="content-wrapper">
             @if(session()->has('message'))
             <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true" onclick="closeMessage()">x</button>
+
               {{session()->get('message')}}
             </div>
             @endif
@@ -45,16 +47,23 @@
               </form>
             </div>
           </div>
-       </div>
-      
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          @include('admin.footer')
-          <!-- partial -->
         </div>
-        <!-- main-panel ends -->
       </div>
-      <!-- page-body-wrapper ends -->
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
+
+    <script>
+      function closeMessage() {
+        document.querySelector('.alert').style.display = 'none';
+      }
+    </script>
   </body>
+</html>
