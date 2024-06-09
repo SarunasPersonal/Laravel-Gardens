@@ -30,6 +30,6 @@ class AdminController extends Controller
         $data->save();
 
         // Redirect back to the previous page
-        return redirect()->back();
+        return redirect()->back()->with('message','Category Successfully added!');
     }
 }
