@@ -75,5 +75,12 @@ class AdminController extends Controller
 
 
     }
+    public function delete_product($id)
+    {
+        $data=product::find($id);
+        $data->delete();
+        return redirect()->back()->with('message','Product Successfully deleted!');
+
+    }
     
 }

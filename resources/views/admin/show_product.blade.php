@@ -50,6 +50,13 @@
         @include('admin.navbar')
         <div class="main-panel">
             <div class="content-wrapper">
+                @if(session()->has('message'))
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true" onclick="closeMessage()">x</button>
+
+              {{session()->get('message')}}
+            </div>
+            @endif
                 <h2 class="h2_font">All Products</h2>
 
                 <table class="center">
@@ -61,6 +68,8 @@
                         <th class="th_design">Price</th>
                         <th class="th_design">Discount Price</th>
                         <th class="th_design">Product Image</th>
+                        <th class="th_design">Delete</th>
+                        <th class="th_design">Update</th>
                     </tr>
                     @foreach ($product as $product)
                     <tr>
@@ -72,6 +81,10 @@
                         <td>{{$product->discount_price}}</td>
                         <td>
                             <img class="img_size" src="/product/{{$product->image}}">
+                        </td>
+                        <td><a class="btn btn-primary" href="">Update</td>
+                        <td>
+                            <a class="btn btn-danger" onclick  ="return confirm('Press Ok to Delete Category.')" href="{{url('delete_product',$product->id)}}">Delete</a>
                         </td>
                     </tr>
                     @endforeach
