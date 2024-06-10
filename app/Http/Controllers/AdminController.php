@@ -62,8 +62,9 @@ class AdminController extends Controller
             $imagename = time().'.'.$image->getClientOriginalExtension();
             $image->move('product', $imagename);
             $product->image = $imagename;
-            $product->save();
+            
         }
+        $product->save();
 
 
         return redirect()->back()->with('message','Category Successfully added!');
@@ -81,6 +82,37 @@ class AdminController extends Controller
         $data->delete();
         return redirect()->back()->with('message','Product Successfully deleted!');
 
+    }
+    public function update_product($id)
+
+    {
+        $product=product::find($id);
+        $category=category::all();
+        
+        return view('admin.update_product',compact('product','category'));
+
+
+    }
+    public function update_product_confirm(Request $request, $id)
+    {
+        $product = Product::find($id);
+        $product->title = $request->title;
+        $product->description = $request->description;
+        $product->price = $request->price;
+        $product->quantity = $request->quantity;
+        $product->discount_price = $request->discount_price;
+        $product->category = $request->category;
+    
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imagename = time().'.'.$image->getClientOriginalExtension();
+            $image->move('product', $imagename);
+            $product->image = $imagename;
+        }
+    
+        $product->save();
+    
+        return redirect()->back()->with('message', 'Product successfully updated!');
     }
     
 }
