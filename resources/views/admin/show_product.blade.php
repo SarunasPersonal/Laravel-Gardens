@@ -82,7 +82,7 @@
                         <td>
                             <img class="img_size" src="/product/{{$product->image}}">
                         </td>
-                        <td><a class="btn btn-primary" href="">Update</td>
+                        <td><a class="btn btn-primary" href="{{url('update_product',$product->id)}}">Update</td>
                         <td>
                             <a class="btn btn-danger" onclick  ="return confirm('Press Ok to Delete Category.')" href="{{url('delete_product',$product->id)}}">Delete</a>
                         </td>
