@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-//auth was added to check if the user is authenticated or not
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
-//app model user was added to check the usertype of the user
 use App\Models\User;
 
 class HomeController extends Controller
@@ -14,7 +13,10 @@ class HomeController extends Controller
     //adding the index function to redirect to the userpage
     public function index()
     {
-        return view('home.userpage');
+        $product=Product::all();
+        //returning the userpage view all the products
+        return view('home.userpage',compact('product'));
+        //returning the userpage view all the products
     }
     //it will check if the user is authenticated or not
     public function redirect()
