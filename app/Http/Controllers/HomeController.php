@@ -12,8 +12,10 @@ class HomeController extends Controller
 
     //adding the index function to redirect to the userpage
     public function index()
+
     {
-        $product=Product::all();
+        //amount of products per page is 6
+        $product=Product::paginate(3);
         //returning the userpage view all the products
         return view('home.userpage',compact('product'));
         //returning the userpage view all the products
@@ -29,7 +31,10 @@ class HomeController extends Controller
         } 
         else 
         {
-            return view('home.userpage');
+            $product=Product::paginate(3);
+            //returning the userpage view all the products
+            return view('home.userpage',compact('product'));
+            //returning the userpage view all the products
         }
     }
 }
