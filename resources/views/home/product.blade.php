@@ -2,8 +2,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Our <span>products</span>
-               </h2>
+                  Broadleigh Gardens Products
             </div>
             <div class="row">
 

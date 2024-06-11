@@ -123,6 +123,7 @@ a:focus {
 
 .header_section {
     padding: 15px 0;
+    background-color: #FFBED4;
 }
 
 .header_section .container-fluid {
@@ -150,7 +151,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 20px;
-    color: #131313;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     border-radius: 5px;
@@ -167,11 +168,11 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #f7444e;
+  color: #ffffff;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link svg, .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
-  fill: #f7444e;
+  fill: #07767e;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -275,12 +276,12 @@ a:focus {
     font-size: 4.5rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #002c3e;
+    color: #000000;
     line-height: 70px;
 }
 
 .slider_section .detail-box h1 span {
-  color: #f7444e;
+  color: #24857C;
 }
 
 .slider_section .detail-box p {
@@ -292,8 +293,8 @@ a:focus {
 .slider_section .detail-box a {
     display: inline-block;
     padding: 12px 45px;
-    background-color: #f7444e;
-    border: 1px solid #f7444e;
+    background-color: #24857C;
+    border: 1px solid #24857C;
     color: #ffffff;
     border-radius: 0;
     -webkit-transition: all 0.3s;
@@ -334,7 +335,6 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #f7444e;
 }
 
 .slider_bg_box {
@@ -408,7 +408,7 @@ a:focus {
 
 .product_section .box .detail-box h6 {
   margin-top: 10px;
-  color: #002c3e;
+  color: #24857C;
   font-weight: 600;
 }
 
@@ -659,8 +659,8 @@ a:focus {
 .subscribe_section .subscribe_form form button {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #24857C;
+  border: 1px solid #24857C;
   color: #ffffff;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
@@ -836,7 +836,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #f7444e;
+  color: #24857C;
 }
 
 .footer_section .footer-logo {
@@ -956,11 +956,11 @@ li.nav-item ul li a {
 }
 
 li.nav-item ul li a:hover, li.nav-item ul li a:focus {
-    color: #f7444e;
+    color: #24857C;
 }
 
 .inner_page_head {
-    background: #f7444e;
+    background: #24857C;
     text-align: center;
     color: #fff;
     padding-top: 50px;
@@ -980,7 +980,7 @@ footer {
 }
 
 .logo_footer {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .information_f p {
@@ -1044,7 +1044,7 @@ div.form_sub .field input[type="email"], div.form_sub .field input[type="email"]
 .form_sub input[type="email"] + input[type="submit"] {
     position: absolute;
     right: 0;
-    background: #f7444e;
+    background: #24857C;
     color: #fff;
     border: none;
     top: 0px;
@@ -1094,7 +1094,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
-    background: #f7444e;
+    background: #24857C;
     color: #fff;
 }
 
@@ -1115,7 +1115,7 @@ form input[type="submit"]:focus {
 
 .cpy_ p a {
     margin: 0;
-    color: #f7444e;
+    color: #24857C;
     font-size: 15px;
     font-weight: 400;
 }

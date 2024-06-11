@@ -31,7 +31,7 @@ class HomeController extends Controller
         } 
         else 
         {
-            $product=Product::paginate(3);
+            $product=Product::paginate(6);
             //returning the userpage view all the products
             return view('home.userpage',compact('product'));
             //returning the userpage view all the products

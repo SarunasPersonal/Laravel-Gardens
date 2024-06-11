@@ -1,92 +1,41 @@
-<section class="slider_section ">
-    <div class="slider_bg_box">
-       <img src="images/slider-bg.jpg" alt="">
-    </div>
-    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-       <div class="carousel-inner">
-          <div class="carousel-item active">
-             <div class="container ">
-                <div class="row">
-                   <div class="col-md-7 col-lg-6 ">
-                      <div class="detail-box">
-                         <h1>
-                            <span>
-                            Sale 20% Off
-                            </span>
-                            <br>
-                            On Everything
-                         </h1>
-                         <p>
-                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                         </p>
-                         <div class="btn-box">
-                            <a href="" class="btn1">
-                            Shop Now
-                            </a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="carousel-item ">
-             <div class="container ">
-                <div class="row">
-                   <div class="col-md-7 col-lg-6 ">
-                      <div class="detail-box">
-                         <h1>
-                            <span>
-                            Sale 20% Off
-                            </span>
-                            <br>
-                            On Everything
-                         </h1>
-                         <p>
-                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                         </p>
-                         <div class="btn-box">
-                            <a href="" class="btn1">
-                            Shop Now
-                            </a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="carousel-item">
-             <div class="container ">
-                <div class="row">
-                   <div class="col-md-7 col-lg-6 ">
-                      <div class="detail-box">
-                         <h1>
-                            <span>
-                            Sale 20% Off
-                            </span>
-                            <br>
-                            On Everything
-                         </h1>
-                         <p>
-                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                         </p>
-                         <div class="btn-box">
-                            <a href="" class="btn1">
-                            Shop Now
-                            </a>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-       <div class="container">
-          <ol class="carousel-indicators">
-             <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-             <li data-target="#customCarousel1" data-slide-to="1"></li>
-             <li data-target="#customCarousel1" data-slide-to="2"></li>
-          </ol>
-       </div>
+      <section class="slider_section ">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="slider_bg_box">
+                        <img src="images/slider_bg.png" alt="">
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <img src="images/hello.png" alt="" style="width: 100%; height: auto;">
+               </div>
+            </div>
+      </div>
+         <div class="container ">
+            <div class="row">
+               <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                     <h1>
+                        <span style="font-color: green;">
+                        Hello
+                        </span>
+                        <br>
+                        Welcome to Broadleigh Gardens
+                     </h1>
+                     <p>
+                              Nestled in the beautiful landscapes of Somerset. For more than four decades, we’ve been proudly cultivating a vibrant community of garden enthusiasts, just like you! As a family-run business, we understand the joy and satisfaction that comes from nurturing your own green haven. Here at Broadleigh Gardens, we specialise in the propagation and mail-order retail of small bulbs, carefully selecting each one to ensure you receive nothing but the best. Whether you’re a seasoned gardener or just beginning your botanical journey, we’re here to provide you with top-quality bulbs and a personal touch that sets us apart.
+                     </p>
+                     <div class="btn-box">
+                        <a href="" class="btn1">
+                        Shop Now
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+          
     </div>
  </section>
 </div>

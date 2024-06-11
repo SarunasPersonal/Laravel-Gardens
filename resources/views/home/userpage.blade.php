@@ -10,8 +10,8 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="images/favicon.png" type="">
-      <title>Famms - Fashion HTML Template</title>
+      <link rel="shortcut icon" href="images/logo.png" type="">
+      <title>Broadleigh Gardens</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->
@@ -32,11 +32,11 @@
          <!-- end slider section -->
       
       <!-- why section -->
-        @include('home.why')
+        
       <!-- end why section -->
       
       <!-- arrival section -->
-       @include('home.new_arrival')
+       
       <!-- end arrival section -->
       
       <!-- product section -->
@@ -48,7 +48,7 @@
       <!-- end subscribe section -->
       
       <!-- client section -->
-       @include('home.clients')
+    
         <!-- end client section -->
         <!-- footer starts -->
        @include('home.footer')
